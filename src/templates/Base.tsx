@@ -1,7 +1,12 @@
 import { Footer } from './Footer';
 import { Hero } from './Hero';
+import { AirdropSection } from '../airdrop';
+import { BlogSection } from '../blog';
+import { CommunitySection } from '../community';
 import { FeatureTitle } from '../feature/FeatureTitle';
 import { Meta } from '../layout/Meta';
+import { RoadmapSection } from '../roadmap';
+import { StatisticSection } from '../statistic';
 import { AppConfig } from '../utils/AppConfig';
 
 const Base = () => (
@@ -9,8 +14,11 @@ const Base = () => (
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Hero />
     <FeatureTitle />
-    {/* <VerticalFeatures /> */}
-    {/* <Banner /> */}
+    <StatisticSection />
+    <AirdropSection />
+    <RoadmapSection />
+    <CommunitySection />
+    <BlogSection />
     <Footer />
   </div>
 );
