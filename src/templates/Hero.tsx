@@ -3,34 +3,40 @@ import Link from 'next/link';
 import { Logo } from './Logo';
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
+import { Partner } from '../components/Partner';
+import { PartnerCamera } from '../components/PartnerCamera';
+import { PartnerStartup } from '../components/PartnerStartup';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 
+interface IItemNavbar {
+  text: string;
+  link: string;
+}
+
+const ItemNavbar = (props: IItemNavbar) => (
+  <li>
+    <Link href={props.link}>
+      <a className="text-slate-500 hover:font-bold hover:text-white px-4">
+        {props.text}
+      </a>
+    </Link>
+  </li>
+);
+
 const Hero = () => (
-  <Background color="bg-slate-900">
+  <Background color="bg-slate-950">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo />}>
-        <li>
-          <Link href="/">
-            <a className="text-white">Lock</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a className="text-white">Liquid</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a className="text-white">Swap</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            <a className="text-white">Sign in</a>
-          </Link>
-        </li>
+        <div className="md:flex hidden justify-between text-sm ">
+          <ItemNavbar text="Swap" link="/" />
+          <ItemNavbar text="Liquidity" link="/" />
+          <ItemNavbar text="Stake" link="/" />
+          <ItemNavbar text="Bridge" link="/" />
+          <ItemNavbar text="Vote" link="/" />
+          <ItemNavbar text="Chart" link="/" />
+        </div>
       </NavbarTwoColumns>
     </Section>
 
@@ -38,19 +44,39 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            <span className="text-teal-300">{'Swap Your Tokens\n'}</span>
-            <span className="text-indigo-500">With Low Slippage</span>
+            <span className="text-teal-300">{'ve(3,3) DEX\n'}</span>
+            <span className="text-violet-500">on zkSync Era</span>
           </>
         }
-        description="Forti.fi smart routing, deep liquidity, and latest AMM technology allow you to enjoy low slippage and high return when swapping one cryptocurrency for another."
+        description={
+          <>
+            <div className="text-xl mt-4">
+              Forti.fi is the decentralized exchange built on zkSync Era
+            </div>
+            <div className="text-xl mb-16">
+              with the vote escrow ve(3,3) mechanism
+            </div>
+          </>
+        }
         button={
           <Link href="/">
             <a>
-              <Button xl>SWAP NOW</Button>
+              <Button>LAUNCH APP</Button>
             </a>
           </Link>
         }
       />
+    </Section>
+    <Section yPadding="">
+      <div className="text-center text-xl mt-4">ROUTING THROUGH</div>
+      <div className="flex">
+        <Partner />
+        <PartnerCamera />
+        <PartnerStartup />
+        <Partner />
+        <PartnerCamera />
+        <PartnerStartup />
+      </div>
     </Section>
   </Background>
 );

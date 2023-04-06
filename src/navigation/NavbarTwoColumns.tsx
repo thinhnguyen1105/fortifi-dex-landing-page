@@ -2,6 +2,9 @@ import { ReactNode } from 'react';
 
 import Link from 'next/link';
 
+import { Button } from '../button/Button';
+import { SettingIcon } from '../icons/Setting';
+
 type INavbarProps = {
   logo: ReactNode;
   children: ReactNode;
@@ -20,6 +23,14 @@ const NavbarTwoColumns = (props: INavbarProps) => (
         {props.children}
       </ul>
     </nav>
+    <div className="flex items-center">
+      <Link href="/">
+        <a className="mr-4">
+          <Button sm>CONNECT WALLET</Button>
+        </a>
+      </Link>
+      <SettingIcon />
+    </div>
 
     <style jsx>
       {`
