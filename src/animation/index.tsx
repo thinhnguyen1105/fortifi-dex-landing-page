@@ -2,7 +2,11 @@ import { useEffect, useRef, useState } from 'react';
 
 import type { LottiePlayer } from 'lottie-web';
 
-export const TestAnimation = () => {
+interface IProps {
+  path: string;
+}
+
+export const TestAnimation = (props: IProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [lottie, setLottie] = useState<LottiePlayer | null>(null);
 
@@ -19,7 +23,7 @@ export const TestAnimation = () => {
         loop: true,
         autoplay: true,
         // path to your animation file, place it inside public folder
-        path: '/animation/exchange/data.json',
+        path: props.path,
       });
 
       return () => animation.destroy();
