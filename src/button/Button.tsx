@@ -23,7 +23,7 @@ const Button = (props: IButtonProps) => {
       <style jsx>
         {`
           .btn {
-            @apply inline-block rounded-full text-center;
+            @apply inline-block rounded-full cursor-pointer text-center;
           }
 
           .btn-base {

@@ -22,7 +22,7 @@ const AirdropSection = () => (
             <div className="hover:bg-slate-200 cursor-pointer inline-block rounded-full text-center font-medium text-violet-500 bg-white text-sm py-1 px-10 mr-4">
               PARTICIPATE
             </div>
-            <div className="md:inline-block hidden rounded-full text-center font-medium text-white bg-slate-800 text-sm py-1 px-6">
+            <div className="md:inline-block hidden cursor-pointer rounded-full text-center font-medium text-white bg-slate-800 text-sm py-1 px-6">
               INFORMATION
             </div>
           </div>
