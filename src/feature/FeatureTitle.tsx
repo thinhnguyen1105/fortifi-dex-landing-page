@@ -1,11 +1,11 @@
+import { TestAnimation } from '../animation';
+import { Section } from '../layout/Section';
 import { FeatureCard } from './FeatureCard';
-import { ExchangeImage } from './images/ExchangeImage';
 import { FarmImage } from './images/FarmImage';
 import { LaunchPadImage } from './images/LaunchPadImage';
 import { LiquidityImage } from './images/LiquidityImage';
 import { StakeImage } from './images/StakeImage';
 import { Ve33Image } from './images/Ve33Image';
-import { Section } from '../layout/Section';
 
 const FeatureTitle = () => (
   <div className="bg-slate-950">
@@ -16,7 +16,7 @@ const FeatureTitle = () => (
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-16">
         <FeatureCard
-          image={<ExchangeImage />}
+          image={<TestAnimation />}
           title="EXCHANGE"
           description="Assets are traded by utilizing intelligent routing, abundant liquidity, and the newest automated market maker (AMM) technology to achieve minimal price slippage"
           primaryButtonText="Trade"

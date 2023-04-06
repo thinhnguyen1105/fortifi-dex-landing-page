@@ -1,5 +1,3 @@
-import { Footer } from './Footer';
-import { Hero } from './Hero';
 import { AirdropSection } from '../airdrop';
 import { BlogSection } from '../blog';
 import { CommunitySection } from '../community';
@@ -8,6 +6,8 @@ import { Meta } from '../layout/Meta';
 import { RoadmapSection } from '../roadmap';
 import { StatisticSection } from '../statistic';
 import { AppConfig } from '../utils/AppConfig';
+import { Footer } from './Footer';
+import { Hero } from './Hero';
 
 const Base = () => (
   <div className="antialiased text-gray-600">
