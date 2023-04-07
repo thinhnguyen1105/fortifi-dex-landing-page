@@ -1,4 +1,4 @@
-Forti.fi zKsync Dapp
+# Forti.fi zKsync Dapp
 
 Developer experience first:
 
@@ -25,6 +25,6 @@ Built-in feature from Next.js:
 - ✅ Cache busting
 
 Todo-list
-- [ ] Update landing page
+- [ ] Update UI landing page
 - [ ] Integrate Ant Design
 - [ ] Connect Wallet zKSync
