@@ -1,6 +1,6 @@
 import { FeatureCard } from './FeatureCard';
-import { TestAnimation } from '../animation';
-import { Section } from '../layout/Section';
+import { TestAnimation } from '../../animation';
+import { Section } from '../../layout/Section';
 
 const FeatureTitle = () => (
   <div className="bg-slate-950">

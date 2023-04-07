@@ -1,5 +1,5 @@
 import { AirdropImage } from './images/AirdropImage';
-import { Section } from '../layout/Section';
+import { Section } from '../../layout/Section';
 
 const AirdropSection = () => (
   <div className="bg-slate-950">

@@ -1,6 +1,6 @@
 import { Logo } from './Logo';
-import { Background } from '../background/Background';
 import { Section } from '../layout/Section';
+import { Background } from '../modules/background/Background';
 
 const UpButton = () => (
   <svg

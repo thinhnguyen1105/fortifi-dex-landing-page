@@ -3,7 +3,7 @@ import { DiscordImage } from './components/DiscordImage';
 import { GithubImage } from './components/GithubImage';
 import { TeleImage } from './components/TeleImage';
 import { TwitterImage } from './components/TwitterImage';
-import { Section } from '../layout/Section';
+import { Section } from '../../layout/Section';
 
 const CommunitySection = () => (
   <div className="bg-slate-950">

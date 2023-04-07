@@ -1,6 +1,6 @@
 import { BlogCard } from './components/BlogCard';
+import { Section } from '../../layout/Section';
 import { DividerDash } from '../community/components/DividerDash';
-import { Section } from '../layout/Section';
 
 const BlogSection = () => (
   <div className="bg-slate-950">

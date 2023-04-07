@@ -2,8 +2,8 @@ import { ReactNode } from 'react';
 
 import Link from 'next/link';
 
+import { SettingIcon } from '../../icons/Setting';
 import { Button } from '../button/Button';
-import { SettingIcon } from '../icons/Setting';
 
 type INavbarProps = {
   logo: ReactNode;

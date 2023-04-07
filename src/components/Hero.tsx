@@ -1,14 +1,14 @@
 import Link from 'next/link';
 
 import { Logo } from './Logo';
-import { Background } from '../background/Background';
-import { Button } from '../button/Button';
-import { Partner } from '../components/Partner';
-import { PartnerCamera } from '../components/PartnerCamera';
-import { PartnerStartup } from '../components/PartnerStartup';
-import { HeroOneButton } from '../hero/HeroOneButton';
+import { Partner } from './Partner';
+import { PartnerCamera } from './PartnerCamera';
+import { PartnerStartup } from './PartnerStartup';
 import { Section } from '../layout/Section';
-import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
+import { Background } from '../modules/background/Background';
+import { Button } from '../modules/button/Button';
+import { HeroOneButton } from '../modules/hero/HeroOneButton';
+import { NavbarTwoColumns } from '../modules/navigation/NavbarTwoColumns';
 
 interface IItemNavbar {
   text: string;

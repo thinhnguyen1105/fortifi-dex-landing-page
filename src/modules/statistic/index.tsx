@@ -1,5 +1,5 @@
 import { Numbers } from './images/Numbers';
-import { Section } from '../layout/Section';
+import { Section } from '../../layout/Section';
 
 const StatisticSection = () => (
   <div className="bg-slate-950">
