@@ -1,0 +1,1 @@
+Sự khác biệt giữa Layer 1 và Layer 2
