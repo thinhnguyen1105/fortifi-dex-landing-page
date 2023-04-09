@@ -6,7 +6,9 @@ type IBackgroundProps = {
 };
 
 const Background = (props: IBackgroundProps) => (
-  <div className="bg-gradient-dot bg-cover">{props.children}</div>
+  <div className="md:bg-gradient-dot bg-slate-950 bg-cover">
+    {props.children}
+  </div>
 );
 
 export { Background };
