@@ -39,7 +39,7 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-primary {
-            @apply text-violet-500 font-semibold bg-white;
+            @apply text-violet-500 font-semibold bg-white px-8;
           }
 
           .btn-secondary {

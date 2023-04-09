@@ -1,13 +1,20 @@
 import { BackgroundCard } from './BackgroundCard';
 
-const BlogCard = () => (
+interface IProps {
+  title: string;
+  shortDescription: string;
+  link: string;
+}
+
+const BlogCard = (props: IProps) => (
   <div className="relative">
     <div className="absolute bottom-6 p-6">
-      <div className="text-white">The Eco Rounter-Effortlessly Co...</div>
-      <div>
-        Introducing external liquidity into swapr with no extra cost to the user
-      </div>
-      <div className="hover:bg-slate-500 inline-block mt-12 rounded-full cursor-pointer text-center font-medium text-white bg-slate-800 text-sm py-2 px-6">
+      <div className="text-white">{props.title}</div>
+      <div className="mt-2">{props.shortDescription}</div>
+      <div
+        onClick={() => window.open(props.link)}
+        className="hover:bg-slate-500 inline-block mt-12 rounded-full cursor-pointer text-center font-medium text-white bg-slate-800 text-sm py-2 px-6"
+      >
         READ BLOG POST
       </div>
     </div>
