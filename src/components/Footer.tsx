@@ -58,10 +58,18 @@ interface IPropsFooterList {
 const FooterList = (props: IPropsFooterList) => (
   <div>
     <div className="text-white font-semibold">{props.title}</div>
-    <div className="text-xs text-gray-500 mt-4">FAQ</div>
-    <div className="text-xs text-gray-500 mt-2">Blog</div>
-    <div className="text-xs text-gray-500 mt-2">Audits</div>
-    <div className="text-xs text-gray-500 mt-2">Brand Assets</div>
+    <div className="text-xs text-gray-500 hover:text-white mt-4 cursor-pointer w-fit">
+      FAQ
+    </div>
+    <div className="text-xs text-gray-500 hover:text-white mt-2 cursor-pointer w-fit">
+      Blog
+    </div>
+    <div className="text-xs text-gray-500 hover:text-white mt-2 cursor-pointer w-fit">
+      Audits
+    </div>
+    <div className="text-xs text-gray-500 hover:text-white mt-2 cursor-pointer w-fit">
+      Brand Assets
+    </div>
   </div>
 );
 

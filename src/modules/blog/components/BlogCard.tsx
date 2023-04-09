@@ -7,7 +7,7 @@ const BlogCard = () => (
       <div>
         Introducing external liquidity into swapr with no extra cost to the user
       </div>
-      <div className="inline-block mt-12 rounded-full cursor-pointer text-center font-medium text-white bg-slate-800 text-sm py-2 px-6">
+      <div className="hover:bg-slate-500 inline-block mt-12 rounded-full cursor-pointer text-center font-medium text-white bg-slate-800 text-sm py-2 px-6">
         READ BLOG POST
       </div>
     </div>
