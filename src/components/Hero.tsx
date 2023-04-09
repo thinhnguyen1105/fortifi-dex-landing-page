@@ -40,7 +40,7 @@ const Hero = () => (
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pt-20 pb-32">
+    <Section yPadding="pt-20 pb-10">
       <HeroOneButton
         title={
           <>
@@ -69,7 +69,7 @@ const Hero = () => (
     </Section>
     <Section yPadding="">
       <div className="text-center text-xl mt-4">ROUTING THROUGH</div>
-      <div className="flex">
+      <div className="grid md:grid-cols-6 grid-cols-2 gap-4 mt-4">
         <Partner />
         <PartnerCamera />
         <PartnerStartup />

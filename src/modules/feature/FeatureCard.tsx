@@ -22,10 +22,10 @@ const FeatureCard = (props: IProps) => (
       </div>
       <div className="relative">
         <div className="p-6 absolute">
-          <div className="hover:bg-slate-200 cursor-pointer inline-block rounded-full text-center font-medium text-violet-500 bg-white text-sm py-1 px-10 mr-4">
+          <div className="hover:bg-slate-200 cursor-pointer inline-block rounded-full text-center font-medium text-violet-500 bg-white text-sm py-2 px-10 mr-4">
             {props.primaryButtonText.toUpperCase()}
           </div>
-          <div className="md:inline-block hidden cursor-pointer rounded-full text-center font-medium text-white bg-slate-800 text-sm py-1 px-6">
+          <div className="md:inline-block hidden cursor-pointer rounded-full text-center font-medium text-white bg-slate-800 text-sm py-2 px-6">
             {props.secondaryButtonText.toUpperCase()}
           </div>
         </div>

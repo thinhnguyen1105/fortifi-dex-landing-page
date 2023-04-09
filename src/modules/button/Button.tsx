@@ -35,19 +35,19 @@ const Button = (props: IButtonProps) => {
           }
 
           .btn-sm {
-            @apply font-bold text-sm py-1 px-4;
+            @apply font-semibold text-sm py-1 px-4;
           }
 
           .btn-primary {
-            @apply text-violet-500 font-bold bg-white;
+            @apply text-violet-500 font-semibold bg-white;
           }
 
           .btn-secondary {
-            @apply text-white font-bold bg-blue-700;
+            @apply text-white font-semibold bg-blue-700;
           }
 
           .btn-primary:hover {
-            @apply bg-teal-400;
+            @apply bg-slate-200;
           }
         `}
       </style>

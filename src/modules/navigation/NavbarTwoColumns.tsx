@@ -3,6 +3,8 @@ import { ReactNode } from 'react';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import Link from 'next/link';
 
+import { SettingIcon } from '../../icons/Setting';
+
 type INavbarProps = {
   logo: ReactNode;
   children: ReactNode;
@@ -27,7 +29,9 @@ const NavbarTwoColumns = (props: INavbarProps) => (
           <ConnectButton />
         </a>
       </Link>
-      {/* <SettingIcon /> */}
+      <div className="mt-1">
+        <SettingIcon />
+      </div>
     </div>
 
     <style jsx>

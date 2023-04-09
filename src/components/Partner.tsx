@@ -1,5 +1,6 @@
 const Partner = () => (
   <svg
+    className="max-w-full"
     width="182"
     height="94"
     viewBox="0 0 182 94"
