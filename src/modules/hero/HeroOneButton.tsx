@@ -8,9 +8,7 @@ type IHeroOneButtonProps = {
 
 const HeroOneButton = (props: IHeroOneButtonProps) => (
   <header className="text-left">
-    <h1 className="text-6xl font-bold whitespace-pre-line leading-hero">
-      {props.title}
-    </h1>
+    <h1 className="md:w-1/2 w-full">{props.title}</h1>
     {props.description}
     {props.button}
   </header>

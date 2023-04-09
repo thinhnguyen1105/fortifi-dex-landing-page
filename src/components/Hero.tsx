@@ -4,6 +4,7 @@ import { Logo } from './Logo';
 import { Partner } from './Partner';
 import { PartnerCamera } from './PartnerCamera';
 import { PartnerStartup } from './PartnerStartup';
+import { HeroText } from '../icons/HeroText';
 import { Section } from '../layout/Section';
 import { Background } from '../modules/background/Background';
 import { Button } from '../modules/button/Button';
@@ -44,17 +45,18 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            <span className="text-teal-300">{'ve(3,3) DEX\n'}</span>
-            <span className="text-violet-500">on zkSync Era</span>
+            <HeroText />
           </>
         }
         description={
           <>
-            <div className="text-xl mt-4">
-              Forti.fi is the decentralized exchange built on zkSync Era
-            </div>
-            <div className="text-xl mb-16">
-              with the vote escrow ve(3,3) mechanism
+            <div className="text-md leading-6 mt-4 md:w-2/3 mb-8">
+              Fortifi represents an innovative and pioneering integration of
+              cutting-edge DEX methodologies into the protocols that have the
+              ability to incentivize veFORTI holders in order to allocate
+              emissions towards liquidity pools. This revolutionary approach
+              delivers a supple and agile mechanism to accelerate and amplify
+              liquidity with unparalleled effectiveness.
             </div>
           </>
         }

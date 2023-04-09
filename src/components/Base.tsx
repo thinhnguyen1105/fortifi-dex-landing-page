@@ -5,7 +5,6 @@ import { AirdropSection } from '../modules/airdrop';
 import { BlogSection } from '../modules/blog';
 import { CommunitySection } from '../modules/community';
 import { FeatureTitle } from '../modules/feature/FeatureTitle';
-import { RoadmapSection } from '../modules/roadmap';
 import { StatisticSection } from '../modules/statistic';
 import { AppConfig } from '../utils/AppConfig';
 
@@ -16,7 +15,7 @@ const Base = () => (
     <FeatureTitle />
     <StatisticSection />
     <AirdropSection />
-    <RoadmapSection />
+    {/* <RoadmapSection /> */}
     <CommunitySection />
     <BlogSection />
     <Footer />

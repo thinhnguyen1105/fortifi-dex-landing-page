@@ -13,10 +13,7 @@ const AirdropSection = () => (
             Airdrop for Loyalty users
           </div>
           <div className="mt-4">
-            {`Partitcipate in Fortifi's test application to give valuable feedbacks
-          and receive a reward for our community-driven program. Fortifi aims to
-          enhance and optimize the platform to meet the needs of our users by
-          collaborating with community.`}
+            {`Join Fortifi's beta testing program to provide valuable feedback and be rewarded for your active participation in our community-driven initiative. Fortifi is dedicated to continuously improving and optimizing our platform to cater to the evolving needs of our users, and we value the collaborative efforts of our community in achieving this goal.`}
           </div>
           <div className="mt-6">
             <div className="hover:bg-slate-200 cursor-pointer inline-block rounded-full text-center font-medium text-violet-500 bg-white text-sm py-2 px-10 mr-4">
