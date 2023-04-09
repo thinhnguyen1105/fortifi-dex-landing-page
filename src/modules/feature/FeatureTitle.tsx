@@ -11,7 +11,7 @@ const FeatureTitle = () => (
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-16">
         <FeatureCard
-          image={<TestAnimation path="/animation/Exchange/data.json" />}
+          image={<TestAnimation path="/animation/Swap/data.json" />}
           title="EXCHANGE"
           description="Assets are traded by utilizing intelligent routing, abundant liquidity, and the newest automated market maker (AMM) technology to achieve minimal price slippage"
           primaryButtonText="Trade"
