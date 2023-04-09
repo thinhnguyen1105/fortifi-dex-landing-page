@@ -15,14 +15,17 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
+    "@rainbow-me/rainbowkit": "^0.12.7",
     "antd": "^5.0.0",
     "classnames": "^2.3.1",
+    "ethers": "^5",
     "lottie-web": "^5.10.2",
     "next": "^12.0.9",
     "next-seo": "^4.29.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "styled-jsx-plugin-postcss": "^4.0.1"
+    "styled-jsx-plugin-postcss": "^4.0.1",
+    "wagmi": "^0.12.10"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^12.0.9",

@@ -1,9 +1,7 @@
 import { ReactNode } from 'react';
 
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 import Link from 'next/link';
-
-import { SettingIcon } from '../../icons/Setting';
-import { Button } from '../button/Button';
 
 type INavbarProps = {
   logo: ReactNode;
@@ -18,18 +16,18 @@ const NavbarTwoColumns = (props: INavbarProps) => (
       </Link>
     </div>
 
-    <nav>
+    {/* <nav>
       <ul className="navbar flex items-center font-medium text-xl text-gray-800">
         {props.children}
       </ul>
-    </nav>
+    </nav> */}
     <div className="flex items-center">
       <Link href="/">
         <a className="mr-4">
-          <Button sm>CONNECT WALLET</Button>
+          <ConnectButton />
         </a>
       </Link>
-      <SettingIcon />
+      {/* <SettingIcon /> */}
     </div>
 
     <style jsx>
