@@ -74,7 +74,7 @@ const FooterList = (props: IPropsFooterList) => (
 );
 
 const Footer = () => (
-  <Background color="bg-gray-100">
+  <Background>
     <Section>
       <div className="grid grid-rows-3 grid-flow-col gap-4">
         <div className="row-span-3">

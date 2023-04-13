@@ -1,4 +1,5 @@
 import { RainbowKitProvider, getDefaultWallets } from '@rainbow-me/rainbowkit';
+import { ConfigProvider } from 'antd';
 import { AppProps } from 'next/app';
 import '../styles/global.css';
 import 'antd/dist/reset.css';
@@ -33,7 +34,15 @@ const wagmiClient = createClient({
 const MyApp = ({ Component, pageProps }: AppProps) => (
   <WagmiConfig client={wagmiClient}>
     <RainbowKitProvider chains={chains}>
-      <Component {...pageProps} />
+      <ConfigProvider
+        theme={{
+          token: {
+            colorPrimary: '#8055E6',
+          },
+        }}
+      >
+        <Component {...pageProps} />
+      </ConfigProvider>
     </RainbowKitProvider>
   </WagmiConfig>
 );

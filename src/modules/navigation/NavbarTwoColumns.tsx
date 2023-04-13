@@ -18,11 +18,11 @@ const NavbarTwoColumns = (props: INavbarProps) => (
       </Link>
     </div>
 
-    {/* <nav>
-      <ul className="navbar flex items-center font-medium text-xl text-gray-800">
+    <nav>
+      <ul className="navbar flex items-center font-medium text-xl text-white">
         {props.children}
       </ul>
-    </nav> */}
+    </nav>
     <div className="flex items-center">
       <Link href="/">
         <a className="mr-4">
