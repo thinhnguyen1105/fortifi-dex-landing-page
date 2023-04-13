@@ -1,5 +1,5 @@
 import { RainbowKitProvider, getDefaultWallets } from '@rainbow-me/rainbowkit';
-import { ConfigProvider } from 'antd';
+import { ConfigProvider, theme } from 'antd';
 import { AppProps } from 'next/app';
 import '../styles/global.css';
 import 'antd/dist/reset.css';
@@ -36,6 +36,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
     <RainbowKitProvider chains={chains}>
       <ConfigProvider
         theme={{
+          algorithm: theme.darkAlgorithm,
           token: {
             colorPrimary: '#8055E6',
           },

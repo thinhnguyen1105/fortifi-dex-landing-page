@@ -1,3 +1,5 @@
+import { Card } from 'antd';
+
 import { Footer } from '../components/Footer';
 import { Meta } from '../layout/Meta';
 import { Section } from '../layout/Section';
@@ -13,10 +15,10 @@ const AppPage = () => (
     <NavbarApp />
     <Section>
       <div className="flex justify-center">
-        <div className="bg-indigo-800/20 p-6 border-fuchsia-200 text-white md:w-1/2 w-full rounded-md border ">
+        <Card className="md:w-1/2 w-full">
           <TitleSwap />
           <BodySwap />
-        </div>
+        </Card>
       </div>
     </Section>
     <Footer />
