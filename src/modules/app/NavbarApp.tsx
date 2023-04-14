@@ -23,8 +23,8 @@ const NavbarApp = () => (
   <Section yPadding="py-6">
     <NavbarTwoColumns logo={<Logo />}>
       <div className="md:flex justify-between text-sm mt-6">
-        <ItemNavbar text="Swap" link="/" />
-        <ItemNavbar text="Liquidity" link="/" />
+        <ItemNavbar text="Swap" link="/swap" />
+        <ItemNavbar text="Liquidity" link="/liquidity" />
         {/* <ItemNavbar text="Stake" link="/" />
       <ItemNavbar text="Bridge" link="/" />
       <ItemNavbar text="Vote" link="/" />
