@@ -25,6 +25,6 @@ Built-in feature from Next.js:
 - ✅ Cache busting
 
 Todo-list
-- [ ] Update UI landing page
-- [ ] Integrate Ant Design
-- [ ] Connect Wallet zKSync
+- [x] Update UI landing page
+- [x] Integrate Ant Design
+- [x] Connect Wallet zKSync

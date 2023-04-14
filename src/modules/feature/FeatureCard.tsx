@@ -12,16 +12,16 @@ interface IProps {
 
 const FeatureCard = (props: IProps) => (
   <div className="flex flex-col justify-between my-20">
-    <div className="p-6 flex justify-center">{props.image}</div>
+    <div className="md:p-6 flex justify-center">{props.image}</div>
     <div>
-      <div className="px-6 pb-6">
+      <div className="md:px-6 md:pb-6">
         <div className="text-white text-xl font-bold mt-16 font-sans">
           {props.title.toUpperCase()}
         </div>
         <div className="mt-2 font-medium">{props.description}</div>
       </div>
       <div className="relative">
-        <div className="p-6 absolute font-sans">
+        <div className="md:p-6 py-6 absolute font-sans">
           <div className="hover:bg-slate-200 cursor-pointer inline-block rounded-full text-center font-medium text-violet-500 bg-white text-sm py-2 px-10 mr-4">
             {props.primaryButtonText.toUpperCase()}
           </div>

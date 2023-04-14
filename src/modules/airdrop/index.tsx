@@ -9,7 +9,7 @@ const AirdropSection = () => (
           <AirdropImage />
         </div>
         <div>
-          <div className="text-3xl font-normal text-white font-sans">
+          <div className="text-3xl md:text-left text-center font-normal text-white font-sans">
             Airdrop for Loyalty users
           </div>
           <div className="mt-4 font-medium">
