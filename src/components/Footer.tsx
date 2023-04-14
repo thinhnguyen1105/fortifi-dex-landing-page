@@ -51,27 +51,46 @@ const UpButton = () => (
   </svg>
 );
 
+interface IFooter {
+  title: string;
+  url: string;
+}
 interface IPropsFooterList {
   title: string;
+  list: IFooter[];
 }
 
 const FooterList = (props: IPropsFooterList) => (
   <div>
-    <div className="text-white font-semibold">{props.title}</div>
-    <div className="text-xs text-gray-500 hover:text-white mt-4 cursor-pointer w-fit">
-      FAQ
-    </div>
-    <div className="text-xs text-gray-500 hover:text-white mt-2 cursor-pointer w-fit">
-      Blog
-    </div>
-    <div className="text-xs text-gray-500 hover:text-white mt-2 cursor-pointer w-fit">
-      Audits
-    </div>
-    <div className="text-xs text-gray-500 hover:text-white mt-2 cursor-pointer w-fit">
-      Brand Assets
-    </div>
+    <div className="font-sans text-white font-semibold">{props.title}</div>
+    {props.list.map((item, index) => (
+      <div
+        onClick={() => window.open(item.url, '_blank')}
+        key={index}
+        className="text-xs text-gray-500 hover:text-white mt-4 cursor-pointer w-fit"
+      >
+        {item.title}
+      </div>
+    ))}
   </div>
 );
+
+const listAbout = [
+  { title: 'FAQ', url: '/' },
+  { title: 'Brand Assets', url: '/' },
+  { title: 'Guides', url: '/' },
+  { title: 'Terms of Service', url: '/' },
+];
+const listCommunity = [
+  { title: 'Discussion', url: 'https://t.me/Fortify_Chat' },
+  { title: 'Announcement', url: 'https://t.me/Fortify_Ann' },
+  { title: 'Discord', url: 'https://discord.gg/MyFucBDsFZ' },
+];
+const listDevelopers = [
+  { title: 'Application', url: '/' },
+  { title: 'Github', url: '/' },
+  { title: 'Audits ', url: '/' },
+];
 
 const Footer = () => (
   <Background>
@@ -82,9 +101,10 @@ const Footer = () => (
         </div>
         <div className="row-span-2">
           <div className="md:grid hidden grid-cols-4">
-            <FooterList title="About" />
-            <FooterList title="Community" />
-            <FooterList title="Documentation" />
+            <div></div>
+            <FooterList title="About" list={listAbout} />
+            <FooterList title="Community" list={listCommunity} />
+            <FooterList title="Developers" list={listDevelopers} />
           </div>
         </div>
         <div className="row-span-3 flex justify-end">

@@ -5,7 +5,9 @@ import { Section } from '../../layout/Section';
 const FeatureTitle = () => (
   <div className="bg-slate-950">
     <Section>
-      <div className="text-5xl font-semibold text-white">Fortify Feature</div>
+      <div className="text-5xl font-semibold text-white font-sans">
+        Fortify Feature
+      </div>
       <div className="text-xl">
         Swap tokens, provide liquidity, stake and vote
       </div>

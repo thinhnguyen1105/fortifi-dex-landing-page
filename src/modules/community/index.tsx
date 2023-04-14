@@ -8,7 +8,7 @@ import { Section } from '../../layout/Section';
 const CommunitySection = () => (
   <div className="bg-slate-950">
     <Section>
-      <div className="text-4xl text-center font-normal text-white">
+      <div className="text-4xl text-center font-normal text-white font-sans">
         Join Fortify!
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-4 mt-20">
@@ -29,7 +29,7 @@ const CommunitySection = () => (
         />
         <CommunityCard
           image={<GithubImage />}
-          description="Visit the Foritifi repositories on GitHub"
+          description="Visit the Fortify repositories on GitHub"
           buttonText="VISIT GITHUB"
         />
       </div>

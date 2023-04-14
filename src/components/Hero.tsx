@@ -27,62 +27,64 @@ import { NavbarTwoColumns } from '../modules/navigation/NavbarTwoColumns';
 // );
 
 const Hero = () => (
-  <Background>
-    <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo />}>
-        <div className="md:flex hidden justify-between text-sm ">
-          {/* <ItemNavbar text="Swap" link="/" />
+  <div className="font-sans">
+    <Background>
+      <Section yPadding="py-6">
+        <NavbarTwoColumns logo={<Logo />}>
+          <div className="md:flex hidden justify-between text-sm ">
+            {/* <ItemNavbar text="Swap" link="/" />
           <ItemNavbar text="Liquidity" link="/" /> */}
-          {/* <ItemNavbar text="Stake" link="/" />
+            {/* <ItemNavbar text="Stake" link="/" />
           <ItemNavbar text="Bridge" link="/" />
           <ItemNavbar text="Vote" link="/" />
           <ItemNavbar text="Chart" link="/" /> */}
-        </div>
-      </NavbarTwoColumns>
-    </Section>
+          </div>
+        </NavbarTwoColumns>
+      </Section>
 
-    <Section yPadding="pt-20 pb-10">
-      <HeroOneButton
-        title={
-          <>
-            <HeroText />
-          </>
-        }
-        description={
-          <>
-            <div className="text-md leading-6 mt-4 md:w-2/3 mb-8">
-              Fortify represents an innovative and pioneering integration of
-              cutting-edge DEX methodologies into the protocols that have the
-              ability to incentivize veFORTI holders in order to allocate
-              emissions towards liquidity pools. This revolutionary approach
-              delivers a supple and agile mechanism to accelerate and amplify
-              liquidity with unparalleled effectiveness.
-            </div>
-          </>
-        }
-        button={
-          <Link href="/swap">
-            <a>
-              <Button>LAUNCH APP</Button>
-            </a>
-          </Link>
-        }
-      />
-    </Section>
-    <Section yPadding="">
-      <div className="text-center text-xl mt-4">
-        {String('Related Links').toUpperCase()}
-      </div>
-      <div className="grid md:grid-cols-6 grid-cols-2 gap-4 mt-4">
-        <Partner />
-        <PartnerCamera />
-        <PartnerStartup />
-        <Partner />
-        <PartnerCamera />
-        <PartnerStartup />
-      </div>
-    </Section>
-  </Background>
+      <Section yPadding="pt-20 pb-10">
+        <HeroOneButton
+          title={
+            <>
+              <HeroText />
+            </>
+          }
+          description={
+            <>
+              <div className="text-md leading-6 mt-4 md:w-2/3 mb-8">
+                Fortify represents an innovative and pioneering integration of
+                cutting-edge DEX methodologies into the protocols that have the
+                ability to incentivize veFORTI holders in order to allocate
+                emissions towards liquidity pools. This revolutionary approach
+                delivers a supple and agile mechanism to accelerate and amplify
+                liquidity with unparalleled effectiveness.
+              </div>
+            </>
+          }
+          button={
+            <Link href="/swap">
+              <a>
+                <Button>LAUNCH APP</Button>
+              </a>
+            </Link>
+          }
+        />
+      </Section>
+      <Section yPadding="">
+        <div className="text-center text-xl mt-4">
+          {String('Related Links').toUpperCase()}
+        </div>
+        <div className="grid md:grid-cols-6 grid-cols-2 gap-4 mt-4">
+          <Partner />
+          <PartnerCamera />
+          <PartnerStartup />
+          <Partner />
+          <PartnerCamera />
+          <PartnerStartup />
+        </div>
+      </Section>
+    </Background>
+  </div>
 );
 
 export { Hero };
