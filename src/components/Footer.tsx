@@ -65,7 +65,9 @@ const FooterList = (props: IPropsFooterList) => (
     <div className="font-sans text-white font-semibold">{props.title}</div>
     {props.list.map((item, index) => (
       <div
-        onClick={() => window.open(item.url, '_blank')}
+        onClick={() => {
+          if (item.url !== '/') window.open(item.url, '_blank');
+        }}
         key={index}
         className="text-xs text-gray-500 hover:text-white mt-4 cursor-pointer w-fit"
       >

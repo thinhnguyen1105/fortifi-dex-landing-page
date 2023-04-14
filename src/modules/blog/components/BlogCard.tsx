@@ -14,7 +14,7 @@ const BlogCard = (props: IProps) => (
       <div className="text-white font-sans">{props.title}</div>
       <div className="mt-2">{props.shortDescription}</div>
       <div
-        onClick={() => window.open(props.link)}
+        onClick={() => window.open(props.link, '_blank')}
         className="font-sans hover:bg-slate-500 inline-block mt-12 rounded-full cursor-pointer text-center font-medium text-white bg-slate-800 text-sm py-2 px-6"
       >
         READ BLOG POST
