@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'Forti.fi',
-  title: 'Forti.fi',
+  site_name: 'Fortify',
+  title: 'Fortify',
   description: 'The Native Liquidity Layer On zKSync',
   locale: 'en',
   telegram: 'https://t.me/Fortify_Chat',

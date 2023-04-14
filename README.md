@@ -1,4 +1,4 @@
-# Forti.fi zKsync Dapp
+# Fortify zKsync Dapp
 
 Developer experience first:
 
