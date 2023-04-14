@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { CaretDownOutlined } from '@ant-design/icons';
 import { Avatar } from 'antd';
 
+import ModalSelectToken from './ModalSelectToken';
+import { listTokens } from '../../../helpers/listTokens';
+
 function PrimaryExchange() {
-  const url =
-    'https://ih1.redbubble.net/image.3060066889.0149/st,small,845x845-pad,1000x1000,f8f8f8.jpg';
+  const [isOpenDialog, setOpenDialog] = useState(false);
+  const openSelectTokenDialog = () => {
+    setOpenDialog(true);
+    console.log('open');
+  };
   return (
     <div>
       <div className="flex justify-between text-xs mt-2">
@@ -14,12 +20,23 @@ function PrimaryExchange() {
       </div>
       <div className="bg-indigo-200/20 p-4 text-white w-full rounded-md mt-1 flex justify-between">
         <div className="py-1 text-3xl">0.00</div>
-        <div className="py-1 flex items-center">
-          <Avatar size={'small'} src={<img src={url} alt="avatar" />} />
-          <div className="mx-2">BNB</div>
+        <div
+          onClick={() => openSelectTokenDialog()}
+          className="py-1 flex items-center cursor-pointer"
+        >
+          <Avatar
+            size={'small'}
+            src={<img src={listTokens.eth.image} alt="avatar" />}
+          />
+          <div className="mx-2">ETH</div>
           <CaretDownOutlined />
         </div>
       </div>
+      <ModalSelectToken
+        isOpenDialog={isOpenDialog}
+        handleConfirm={() => {}}
+        handleCancel={() => setOpenDialog(false)}
+      />
     </div>
   );
 }
