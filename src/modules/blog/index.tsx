@@ -9,7 +9,7 @@ const BlogSection = () => (
       <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
         <BlogCard
           title="What Is A Layer-2 Blockchain?"
-          shortDescription="Layer 2 refers to a secondary framework or protocol that is built on top of an existing blockchain system..."
+          shortDescription="Layer 2 refers to a secondary framework or protocol that is built on top of an..."
           link="https://academy.binance.com/en/glossary/layer-2"
           img="/assets/images/blog-01.png"
         />

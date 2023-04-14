@@ -69,7 +69,7 @@ const FooterList = (props: IPropsFooterList) => (
           if (item.url !== '/') window.open(item.url, '_blank');
         }}
         key={index}
-        className="text-xs text-gray-500 hover:text-white mt-4 cursor-pointer w-fit"
+        className="text-xs font-medium text-gray-500 hover:text-white mt-4 cursor-pointer w-fit"
       >
         {item.title}
       </div>

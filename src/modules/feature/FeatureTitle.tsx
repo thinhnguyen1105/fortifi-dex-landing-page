@@ -8,7 +8,7 @@ const FeatureTitle = () => (
       <div className="text-5xl font-semibold text-white font-sans">
         Fortify Feature
       </div>
-      <div className="text-xl">
+      <div className="text-xl font-medium">
         Swap tokens, provide liquidity, stake and vote
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-16">

@@ -2,6 +2,7 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
+      medium: ['Space Grotesk Medium', 'sans-serif'],
       sans: ['Space Grotesk', 'sans-serif'],
     },
     fontSize: {

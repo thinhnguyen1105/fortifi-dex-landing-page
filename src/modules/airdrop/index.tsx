@@ -12,7 +12,7 @@ const AirdropSection = () => (
           <div className="text-3xl font-normal text-white font-sans">
             Airdrop for Loyalty users
           </div>
-          <div className="mt-4">
+          <div className="mt-4 font-medium">
             {`Join Fortify's beta testing program to provide valuable feedback and be rewarded for your active participation in our community-driven initiative. Fortify is dedicated to continuously improving and optimizing our platform to cater to the evolving needs of our users, and we value the collaborative efforts of our community in achieving this goal.`}
           </div>
           <div className="mt-6 font-sans">

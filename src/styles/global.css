@@ -10,3 +10,10 @@
   font-weight: 400;
   src: url('/fonts/SpaceGrotesk-Bold.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Space Grotesk Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/SpaceGrotesk-Regular.ttf') format('truetype');
+}
