@@ -4,11 +4,13 @@ interface IProps {
   title: string;
   shortDescription: string;
   link: string;
+  img: string;
 }
 
 const BlogCard = (props: IProps) => (
   <div className="relative">
-    <div className="absolute bottom-6 p-6">
+    <div className="absolute md:top-7 top-6 p-5">
+      <img className="mb-6" src={props.img} alt="blog-image" />
       <div className="text-white">{props.title}</div>
       <div className="mt-2">{props.shortDescription}</div>
       <div

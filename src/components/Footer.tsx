@@ -85,7 +85,6 @@ const Footer = () => (
             <FooterList title="About" />
             <FooterList title="Community" />
             <FooterList title="Documentation" />
-            <FooterList title="Analytics" />
           </div>
         </div>
         <div className="row-span-3 flex justify-end">

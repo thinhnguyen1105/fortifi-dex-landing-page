@@ -9,22 +9,22 @@ const CommunitySection = () => (
   <div className="bg-slate-950">
     <Section>
       <div className="text-4xl text-center font-normal text-white">
-        Join Fortifi!
+        Join Fortify!
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-4 mt-20">
         <CommunityCard
           image={<TeleImage />}
-          description="Join Fortifi community on Telegram"
+          description="Join Fortify community on Telegram"
           buttonText="JOIN TELEGRAM"
         />
         <CommunityCard
           image={<DiscordImage />}
-          description="Become members of Fortifi on Discord"
+          description="Become members of Fortify on Discord"
           buttonText="JOIN DISCORD"
         />
         <CommunityCard
           image={<TwitterImage />}
-          description="Get the latest news on Fortifi Twitter"
+          description="Get the latest news on Fortify Twitter"
           buttonText="FOLLOW"
         />
         <CommunityCard

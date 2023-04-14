@@ -5,7 +5,7 @@ import { Section } from '../../layout/Section';
 const FeatureTitle = () => (
   <div className="bg-slate-950">
     <Section>
-      <div className="text-5xl font-semibold text-white">Fortifi Feature</div>
+      <div className="text-5xl font-semibold text-white">Fortify Feature</div>
       <div className="text-xl">
         Swap tokens, provide liquidity, stake and vote
       </div>
@@ -28,21 +28,21 @@ const FeatureTitle = () => (
         <FeatureCard
           image={<TestAnimation path="/animation/Stake/data.json" />}
           title="STAKE"
-          description="Fortifi empowers users to earn passive income by staking their Fortifi ($FORTI) or other tokens. This feature serves as an enticing value-add that encourages greater participation and engagement within our platform"
+          description="Fortify empowers users to earn passive income by staking their Fortify ($FORTI) or other tokens. This feature serves as an enticing value-add that encourages greater participation and engagement within our platform"
           primaryButtonText="STAKE"
           secondaryButtonText="Read more"
         />
         <FeatureCard
           image={<TestAnimation path="/animation/Farm/data.json" />}
           title="FARM"
-          description="Fortifi's yield farming incentivizes liquidity providers to stake their crypto assets in a smart contract-based liquidity pool, offering transaction fee percentages, lender interest, and governance tokens as incentives"
+          description="Fortify's yield farming incentivizes liquidity providers to stake their crypto assets in a smart contract-based liquidity pool, offering transaction fee percentages, lender interest, and governance tokens as incentives"
           primaryButtonText="FARM"
           secondaryButtonText="Read more"
         />
         <FeatureCard
           image={<TestAnimation path="/animation/Launchpad/data.json" />}
           title="launchpad"
-          description="Fortifi’s IFO aka launchpad offers a fundraising model for emerging DeFi projects through pre-sales events hosted after strict project vetting"
+          description="Fortify’s IFO aka launchpad offers a fundraising model for emerging DeFi projects through pre-sales events hosted after strict project vetting"
           primaryButtonText="PARTICIPATE"
           secondaryButtonText="Read more"
         />

@@ -51,7 +51,7 @@ const Hero = () => (
         description={
           <>
             <div className="text-md leading-6 mt-4 md:w-2/3 mb-8">
-              Fortifi represents an innovative and pioneering integration of
+              Fortify represents an innovative and pioneering integration of
               cutting-edge DEX methodologies into the protocols that have the
               ability to incentivize veFORTI holders in order to allocate
               emissions towards liquidity pools. This revolutionary approach
@@ -70,7 +70,9 @@ const Hero = () => (
       />
     </Section>
     <Section yPadding="">
-      <div className="text-center text-xl mt-4">ROUTING THROUGH</div>
+      <div className="text-center text-xl mt-4">
+        {String('Related Links').toUpperCase()}
+      </div>
       <div className="grid md:grid-cols-6 grid-cols-2 gap-4 mt-4">
         <Partner />
         <PartnerCamera />

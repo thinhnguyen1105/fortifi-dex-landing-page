@@ -21,7 +21,7 @@ const { chains, provider } = configureChains(
 );
 
 const { connectors } = getDefaultWallets({
-  appName: 'Fortifi Dapp',
+  appName: 'Fortify Dapp',
   chains,
 });
 
