@@ -25,7 +25,7 @@ const NavbarTwoColumns = (props: INavbarProps) => (
     </nav>
     <div className="flex items-center">
       <Link href="/">
-        <a className="mr-4 md:mt-0 mt-4">
+        <a className="mr-4 md:mt-0 mt-4 z-10">
           <ConnectButton />
         </a>
       </Link>
