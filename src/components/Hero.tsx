@@ -4,6 +4,7 @@ import { Logo } from './Logo';
 import { Partner } from './Partner';
 import { PartnerCamera } from './PartnerCamera';
 import { PartnerStartup } from './PartnerStartup';
+import { TestAnimation } from '../animation';
 import { HeroText } from '../icons/HeroText';
 import { Section } from '../layout/Section';
 import { Background } from '../modules/background/Background';
@@ -45,9 +46,12 @@ const Hero = () => (
       <Section yPadding="pt-20 pb-10">
         <HeroOneButton
           title={
-            <>
+            <div className="relative flex">
               <HeroText />
-            </>
+              <div className="md:absolute md:flex hidden -right-24 -top-44">
+                <TestAnimation path="/animation/Hero/data.json" />
+              </div>
+            </div>
           }
           description={
             <>
