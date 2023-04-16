@@ -7,7 +7,7 @@ const StatisticSection = () => (
       <div className="text-5xl font-normal font-sans text-white">
         Fortify Statistics
       </div>
-      <div className="py-8">
+      <div className="py-8 flex justify-center">
         <Numbers />
       </div>
     </Section>
