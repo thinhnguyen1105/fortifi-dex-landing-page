@@ -78,10 +78,13 @@ const FooterList = (props: IPropsFooterList) => (
 );
 
 const listAbout = [
-  { title: 'FAQ', url: '/' },
-  { title: 'Brand Assets', url: '/' },
-  { title: 'Guides', url: '/' },
-  { title: 'Terms of Service', url: '/' },
+  { title: 'FAQ', url: 'https://docs.fortify.finance' },
+  {
+    title: 'Brand Assets',
+    url: 'https://docs.fortify.finance/resources/brand-assets',
+  },
+  { title: 'Guides', url: 'https://docs.fortify.finance/' },
+  { title: 'Terms of Service', url: 'https://docs.fortify.finance/' },
 ];
 const listCommunity = [
   { title: 'Discussion', url: 'https://t.me/Fortify_Chat' },

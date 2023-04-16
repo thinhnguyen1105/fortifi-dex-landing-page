@@ -1,16 +1,21 @@
-import Link from 'next/link';
+import { ReactNode } from 'react';
+
+import { Button, Tooltip } from 'antd';
 
 import { Logo } from './Logo';
 import { Partner } from './Partner';
-import { PartnerCamera } from './PartnerCamera';
-import { PartnerStartup } from './PartnerStartup';
 import { TestAnimation } from '../animation';
 import { HeroText } from '../icons/HeroText';
 import { Section } from '../layout/Section';
 import { Background } from '../modules/background/Background';
-import { Button } from '../modules/button/Button';
 import { HeroOneButton } from '../modules/hero/HeroOneButton';
 import { NavbarTwoColumns } from '../modules/navigation/NavbarTwoColumns';
+import Bridge from '../modules/related-link/Bridge';
+import ChainList from '../modules/related-link/ChainList';
+import Defilima from '../modules/related-link/Defilima';
+import DexScreener from '../modules/related-link/DexScreener';
+import EcoSystem from '../modules/related-link/EcoSystem';
+import Explorer from '../modules/related-link/Explorer';
 
 // interface IItemNavbar {
 //   text: string;
@@ -26,6 +31,23 @@ import { NavbarTwoColumns } from '../modules/navigation/NavbarTwoColumns';
 //     </Link>
 //   </li>
 // );
+
+interface IProps {
+  children: ReactNode;
+  link: string;
+}
+
+const RelatedLink = (props: IProps) => {
+  return (
+    <div
+      onClick={() => window.open(props.link, '_blank')}
+      className="relative cursor-pointer"
+    >
+      <Partner />
+      <div className="absolute top-3 p-6">{props.children}</div>
+    </div>
+  );
+};
 
 const Hero = () => (
   <div className="font-sans">
@@ -66,11 +88,16 @@ const Hero = () => (
             </>
           }
           button={
-            <Link href="/swap">
-              <a>
-                <Button>LAUNCH APP</Button>
-              </a>
-            </Link>
+            <Tooltip placement="topLeft" title={'Coming soon'}>
+              {/* <Button>LAUNCH APP</Button> */}
+              <Button
+                size="large"
+                className="font-bold bg-white text-violet-500 font-sans"
+                type="default"
+              >
+                LAUNCH APP
+              </Button>
+            </Tooltip>
           }
         />
       </Section>
@@ -79,12 +106,24 @@ const Hero = () => (
           {String('Related Links').toUpperCase()}
         </div>
         <div className="grid md:grid-cols-6 grid-cols-2 gap-4 mt-4">
-          <Partner />
-          <PartnerCamera />
-          <PartnerStartup />
-          <Partner />
-          <PartnerCamera />
-          <PartnerStartup />
+          <RelatedLink link="https://ecosystem.zksync.io/">
+            <EcoSystem />
+          </RelatedLink>
+          <RelatedLink link="https://explorer.zksync.io/">
+            <Explorer />
+          </RelatedLink>
+          <RelatedLink link="https://bridge.zksync.io/">
+            <Bridge />
+          </RelatedLink>
+          <RelatedLink link="https://chainlist.org/chain/324">
+            <ChainList />
+          </RelatedLink>
+          <RelatedLink link="https://defillama.com/chain/zkSync%20Era">
+            <Defilima />
+          </RelatedLink>
+          <RelatedLink link="https://dexscreener.com/zksync">
+            <DexScreener />
+          </RelatedLink>
         </div>
       </Section>
     </Background>
