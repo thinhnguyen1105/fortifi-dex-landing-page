@@ -1,6 +1,5 @@
 import { CommunityCard } from './components/CommunityCard';
 import { DiscordImage } from './components/DiscordImage';
-import { GithubImage } from './components/GithubImage';
 import { TeleImage } from './components/TeleImage';
 import { TwitterImage } from './components/TwitterImage';
 import { Section } from '../../layout/Section';
@@ -32,10 +31,10 @@ const CommunitySection = () => (
           url={AppConfig.twitter}
         />
         <CommunityCard
-          image={<GithubImage />}
-          description="Visit the Fortify repositories on GitHub"
-          buttonText="VISIT GITHUB"
-          url={AppConfig.github}
+          image={<TeleImage />}
+          description="Join Fortify channel on Telegram"
+          buttonText="VISIT CHANNEL"
+          url={AppConfig.annoucement}
         />
       </div>
     </Section>

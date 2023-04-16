@@ -6,6 +6,6 @@ export const AppConfig = {
   telegram: 'https://t.me/Fortify_Chat',
   discord: 'https://discord.gg/MyFucBDsFZ',
   annoucement: 'https://t.me/Fortify_Ann',
-  twitter: '',
+  twitter: 'https://twitter.com/FortifyFinance',
   github: '',
 };
